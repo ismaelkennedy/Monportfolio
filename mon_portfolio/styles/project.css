@@ -1,0 +1,116 @@
+h1{
+    color: var(--button-color);
+    font-family: var(--main-font-family);
+    font-size: 2rem; 
+}
+.partenaire {
+    margin-top: 1.5rem;
+    padding: 1rem;
+    display: flex; 
+    gap: 1rem; 
+    justify-content: space-around; 
+    background-color: #314255;
+}
+
+.partenaire div {
+    text-align: center; 
+}
+
+.partenaire img {
+    background-color: var(--text-color);
+    padding: 0;
+    border: 1px solid var(--button-color);
+    width: 100%; 
+    height: auto; 
+    display: block; 
+}
+
+main p {
+    font-size: 14px; 
+    color: var(--color-subtext);
+    font-family: var(--main-font-family);
+    text-align: center;
+}
+
+.projects img{
+    width: 100%;
+}
+
+.projects {
+    margin-top: 1.5rem;
+    padding: 1rem;
+    display: flex; 
+    gap: 1rem; 
+    justify-content: space-around; 
+    background-color: #314255;
+}
+
+.projects img {
+    background-color: var(--text-color);
+    padding: 0;
+    border: 1px solid var(--button-color);
+    width: 100%; 
+    height: auto; 
+    display: block; 
+}
+
+
+/* Style responsive */
+@media (max-width:640px){
+    h1{
+        padding-top: 2rem;
+        color: var(--button-color);
+        font-family: var(--main-font-family);
+        font-size: 1.5rem; 
+    }
+    .partenaire {
+        width: 100%;
+        margin-top: 1.5rem;
+        padding: 1rem;
+        display: flex; 
+        gap: 1rem;
+        justify-content: space-around;
+        background-color: #314255;
+    }
+    
+    .partenaire img {
+        background-color: var(--text-color);
+        padding: 0;
+        border: 1px solid var(--button-color);
+        width: 100%; 
+        height: auto; 
+        display: block; 
+    }
+    
+    main p {
+        font-size: 18px; 
+        color: var(--color-subtext);
+        font-family: var(--main-font-family);
+        text-align: center;
+    }
+    
+    .projects img{
+        width: 100%;
+    }
+    
+    .projects {
+        width: 100%;
+        margin-top: 1.5rem;
+        padding: 1rem;
+        gap: 1rem; 
+        justify-content: space-around; 
+        flex-wrap: wrap; 
+        background-color: #314255;
+    }
+    
+    .projects img {
+        background-color: var(--text-color);
+        padding: 0;
+        border: 1px solid var(--button-color);
+        width: 100%; 
+        height: auto; 
+        display: block; 
+    }
+}
+
+

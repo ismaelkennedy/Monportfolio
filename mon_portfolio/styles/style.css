@@ -1,0 +1,421 @@
+.biography{
+height: 500px;
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+background: rgb(2, 0, 36);
+background: linear-gradient(360deg, rgba(2,0,36,1) 0%, rgba(16,32,44,1) 28%, rgba(0,212,255,1) 100%);
+padding-top: 6rem;
+transition: 2s;
+
+}
+
+.biography_container{
+padding: 0;
+}
+
+
+.biography_hello {
+font-family:var(--main-font-family);
+font-size: 2em;
+white-space: nowrap;
+overflow: hidden;
+width: 0; 
+animation: typing 10s forwards;
+padding: 0;
+}
+
+@keyframes typing {
+from { width: 0; }
+to { width: 100%; }
+}
+
+
+.biography-hidden {
+opacity: 0;
+transform: translateY(50px);
+} 
+
+.biography_hello>h1{
+color:var(--text-color);
+font-family: var(--main-font-family);
+font-size: 49px;
+
+padding: 0;
+}
+.biography_hello>h1>span{
+color:var(--main-color);
+font-family: var(--main-font-family);
+font-size: 49px;
+font-weight: 700;
+padding: 0;
+}
+.biography_hello>p{
+color:var(--text-color);
+font-family: var(--main-font-family);
+font-size: 29px;
+font-weight: lighter;
+padding: 0;
+}
+.biography_img {
+width: 434px;
+height: 408px;
+transform:scaleX(-1);
+}
+.biography_button{
+display: flex;
+flex-direction: column;
+gap: 1rem;
+margin-top: 1rem;
+width: 83%;   
+}
+.biography_button p{
+color: var(--text-color);
+font-family: var(--main-font-family);
+font-size: 1.5rem;
+font-weight: lighter;
+padding: 0;
+}
+.biography_button div a{
+text-decoration: none;
+
+}
+.biography_button img {
+color: var(--rest-of-text);
+width: 10%;
+
+}
+
+.biography_button img:hover{
+transform: scale(1.1);
+}
+
+.biography_button .icon {
+margin-right: -4rem; 
+}
+.statistical-section {
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+gap:16rem ;
+border-bottom: 2px solid #F0F0F5;
+border-top: 2px solid #F0F0F5;
+margin-left: 2rem;
+margin-right: 2rem;
+margin-bottom: 6rem;
+padding-top: 1rem;
+padding-bottom: 1rem;
+}
+
+.statistical-section div{
+
+display: flex;
+flex-direction: column;
+align-items: center;
+width: 25%;
+}
+
+.statistical-section div p{
+font-family: var(--main-font-family);
+font-size: 11px;
+font-weight: 500;
+color: #BFB8B8;
+line-height: 57px;
+}
+
+.aboutme-section{
+display: flex;
+flex-direction: column;
+gap: 2rem;
+transition: 1s;
+}
+
+.aboutme-section div{
+padding: 2rem;
+}
+.aboutme-section div h1{
+font-family: var(--main-font-family);
+font-size: 40px;
+font-weight: 600;
+color: var(--main-color);
+}
+.aboutme-section_container{
+background-color: var(--second-backgrond);
+display: flex;
+flex-direction: row;  
+padding-left: 2rem;
+padding-bottom: 2rem;
+gap: 200px;
+}
+.aboutme-section_par{
+padding-top: 4rem;
+}
+
+.aboutme-section_container div hr{
+background-color: var(--main-color);
+border:none;
+height: 20px;
+width: 30%;
+margin-left: 0.5rem;
+
+
+}
+.aboutme-section_container div h1{
+font-family: var(--main-font-family);
+font-size: 40px;
+font-weight: 600;
+color: var(--button-color);
+
+}
+.aboutme-section_container p{
+font-family:  var(--main-font-family);
+font-size: 19px;
+color: var(--button-color);}
+.aboutme-section span{
+color: var(--main-color);
+font-size: 24px;
+font-weight: 600;
+}
+
+.skills-section{
+display: flex;
+flex-direction: row;
+padding-bottom: 4rem;
+padding-right: rem;
+padding-left: 5rem;
+width: 100%;
+
+
+}
+.skills-section div{
+font-display: flex;
+flex-direction: column;
+justify-content: space-around;
+
+width: 25%;
+}
+.skills-section div p {
+font-family: var(--main-font-family);
+color: var(--rest-of-text);
+line-height: 46px;
+font-size: 20px;
+font-weight: 300;
+}
+.image_author{
+padding: 0;
+}
+.image_author img{
+padding: 0;
+}
+
+
+/* Style responsive */
+@media (max-width:640px) {
+   .biography{
+   height: auto;
+   flex-wrap: wrap;
+   flex-direction: column-reverse;
+   justify-content: space-between;
+   background: rgb(2, 0, 36);
+   background: linear-gradient(360deg, rgba(2,0,36,1) 0%, rgba(16,32,44,1) 28%, rgba(0,212,255,1) 100%);
+   padding: 1rem;
+   margin: 0;
+   transition: 2s;
+   }
+
+   .image_author{
+   display: flex;
+   justify-content: center;
+   padding: 0;
+   }
+
+   .biography_hello {
+   padding: 0;
+   font-family:var(--main-font-family);
+   font-size: 2em;
+   white-space: nowrap;
+   overflow: hidden;
+   width: 0; 
+   animation: typing 10s forwards;
+   }
+
+   @keyframes typing {
+   from { width: 0; }
+   to { width: 100%; }
+   }
+
+
+   .biography-hidden {
+   opacity: 0;
+   transform: translateY(50px);
+   } 
+
+   .biography_hello>h1{
+   color:var(--text-color);
+   font-family: var(--main-font-family);
+   font-size: 2.5rem;
+
+   }
+   .biography_hello>h1>span{
+   color:var(--main-color);
+   font-family: var(--main-font-family);
+   font-size: 2.5rem;
+   font-weight: 700;
+   }
+   .biography_hello>p{
+   color:var(--text-color);
+   font-family: var(--main-font-family);
+   font-size: 1.2rem;
+   font-weight: lighter;
+   }
+   .biography_img {
+   transform:scaleX(-1);
+   }
+   .biography_button{
+   display: flex;
+   flex-direction: column;
+   gap: 1rem;
+   margin-top: 1rem;
+   width: 83%;  
+   padding: 0; 
+   }
+   .biography_button p{
+   color: var(--text-color);
+   font-family: var(--main-font-family);
+   font-size: 1.2rem;
+   font-weight: lighter;
+   }
+   .biography_button div{
+   padding: 0;
+   }
+   .biography_button div a{
+   text-decoration: none;
+   }
+   .biography_button img {
+   color: var(--rest-of-text);
+   width: 12%;
+
+   }
+
+   .biography_button img:hover{
+   transform: scale(1.1);
+   }
+
+   .biography_button .icon {
+   margin-right: -4rem; 
+   }
+
+
+   .statistical-section {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      gap:16rem ;
+      border-bottom: 2px solid #F0F0F5;
+      border-top: 2px solid #F0F0F5;
+      margin-left: 2rem;
+      margin-right: 2rem;
+      margin-bottom: 6rem;
+      padding-top: 1rem;
+      padding-bottom: 1rem;
+         
+         
+   }
+
+   .statistical-section div{
+
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   width: 25%;
+   }
+
+   .statistical-section div p{
+   font-family: var(--main-font-family);
+   font-size: 11px;
+   font-weight: 500;
+   color: #BFB8B8;
+   line-height: 57px;
+   }
+
+   .aboutme-section{
+   display: flex;
+   flex-direction: column;
+   gap: 2rem;
+   transition: 1s;
+   }
+
+   .aboutme-section div{
+   padding: 2rem;
+   }
+   .aboutme-section div h1{
+   font-family: var(--main-font-family);
+   font-size: 40px;
+   font-weight: 600;
+   color: var(--main-color);
+   }
+   .aboutme-section_container{
+   background-color: var(--second-backgrond);
+   display: flex;
+   flex-direction: row;  
+   padding-left: 2rem;
+   padding-bottom: 2rem;
+   gap: 200px;
+   }
+   .aboutme-section_par{
+   padding-top: 4rem;
+   }
+
+   .aboutme-section_container div hr{
+   background-color: var(--main-color);
+   border:none;
+   height: 20px;
+   width: 30%;
+   margin-left: 0.5rem;
+
+
+   }
+   .aboutme-section_container div h1{
+   font-family: var(--main-font-family);
+   font-size: 40px;
+   font-weight: 600;
+   color: var(--button-color);
+
+   }
+   .aboutme-section_container p{
+   font-family:  var(--main-font-family);
+   font-size: 19px;
+   color: var(--button-color);}
+   .aboutme-section span{
+      color: var(--main-color);
+      font-size: 24px;
+      font-weight: 600;
+   }
+
+   .skills-section{
+      display: flex;
+      flex-direction: row;
+   padding-bottom: 4rem;
+   padding-right: rem;
+   padding-left: 5rem;
+      width: 100%;
+      
+      
+   }
+   .skills-section div{
+      font-display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+
+      width: 25%;
+   }
+   .skills-section div p {
+      font-family: var(--main-font-family);
+      color: var(--rest-of-text);
+      line-height: 46px;
+      font-size: 20px;
+      font-weight: 300;
+   }
+
+}   
+
